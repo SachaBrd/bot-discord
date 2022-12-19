@@ -44,8 +44,8 @@ async def on_message(message):
     ]
 
     actu = [
-        "j'ai chier dans mon benne.",
         "Ayant perdu sa seule raison d'exister, la ville de " + random.choice(ville) + " sera rasé.",
+        ""
     ]
 
     phrase = intro + "premiére actualité : \n" + random.choice(actu)
@@ -54,5 +54,24 @@ async def on_message(message):
         response = phrase
         await message.channel.send(response)
 
-client.run('MTA1MTI2NDk2ODk4MjUzMjEzNg.GLTLsy.4pWfu5cMIgrGc1_-os2DOFBtGo4YUlNG0T4Ee8')
+    phrase = [
+        "J'ai envie d'un bon steak froid du RU miam",
+        "seuuuukeuuu",
+        "Je blaire mon mucus quotidiennement",
+        "WOOOOUUUUH WOUH WOUH FOUCOOOOOOOOOO",
+        "ALLAN",
+        "Gelano PA PM",
+        "J'adore les cours de probabilité en amphi le vendredi matin !!!",
+        "U E AAAAA U",
+        "Salut " + str(message.author.name) + " comment ça va ? ^^",
+        "Ah tu tombes à pique " + str(message.author.name) + " ! Je vais lancer World of warcraft shadowlands tu veux venir ?",
+        "Ta gueule " + str(message.author.name)
+    ]
+
+    response = random.choice(phrase)
+
+    if 'allan' in message.content.lower() :
+        await message.channel.send(response)
+
+client.run('MTA1MTI2NDk2ODk4MjUzMjEzNg.GZzToM.N5EFIAqvcnP0EXHg8DAk2Y8Mmhc_kQTdbctnKU')
 
